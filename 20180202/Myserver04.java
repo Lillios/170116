@@ -12,11 +12,7 @@ public class Myserver04{
 		try{
 			ss = new ServerSocket(5999,30);
 			sock = ss.accept();
-			is = sock.getInputStream();
 			os = sock.getOutputStream();
-
-			int n = is.read(buff);
-			System.out.write(buff, 0, n);
 
 			String msg = "HELLO";
 
